@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Romántico</title>
+    
+    
+<style>
+        /* Estilo general d
+
+        /* 
+
+        /* Estilo general del body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to right, #f8d7da, #f9ebea); /* Gradiente suave de rosa y blanco */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        /* Título romántico */
+        h1 {
+            font-size: 50px;
+            color: #ff6f61;
+            text-align: center;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            animation: titleAnimation 3s ease-in-out infinite alternate;
+        }
+
+        /* Animación para el título */
+        @keyframes titleAnimation {
+            0% {
+                transform: translateY(-10px);
+                color: #ff6f61;
+            }
+            50% {
+                transform: translateY(10px);
+                color: #f1a7b7;
+            }
+            100% {
+                transform: translateY(-10px);
+                color: #ff6f61;
+            }
+        }
+
+        /* Corazones flotantes */
+        .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #ff6f61;
+            clip-path: polygon(50% 0%, 100% 35%, 75% 100%, 25% 100%, 0% 35%);
+            animation: floatHeart 5s ease-in-out infinite;
+            opacity: 0.8;
+        }
+
+        /* Animación para los corazones flotantes */
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateY(-200px) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.8;
+            }
+        }
+
+        /* Botón romántico */
+        .romantic-button {
+            background-color: #ff6f61;
+            color: white;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .romantic-button:hover {
+            background-color: #f1a7b7;
+            transform: scale(1.1);
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    
+
+   
+<h1>Te Amo Más Cada Día</h1>
+
+    
+
+<!-- Corazones flotantes generados con CSS -->
+    <div class="heart" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+    
+    
+<div class="heart" style="top: 30%; left: 40%; animation-delay: 2s;"></div>
+    <div class="heart" style="top: 60%; left: 70%; animation-delay: 1s;"></div>
+    
+  
+<div class="heart" style="top: 80%; left: 20%; animation-delay: 3s;"></div>
+    <div class="heart" style="top: 50%; left: 80%; animation-delay: 0.5s;"></div>
+
+    
+
+<!-- Botón romántico -->
+    <button class="romantic-button">te envio un Beso</button>
+
+
+
+
+</body>
+</html>
